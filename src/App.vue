@@ -1,27 +1,35 @@
 <template>
-  <div id='root'>
-    <img src='./logo.png' />
-    <div id='nav'>
-      <router-link to='/'> Home</router-link>
-      <router-link to='/contact'>Contact </router-link>
+  <!--<span>1111</span>-->
+  <!--<div id="root">
+    <img src="./logo.png" />
+    <div id="nav">
+      <router-link to="/">Home</router-link>
+      <router-link to="/contact">Contact</router-link>
     </div>
     <router-view />
-  </div>
+  </div>-->
+  <!--<Main />-->
+  <router-view/>
+  
 </template>
 
 <script>
-import { ref } from 'vue'
+//import Main from "./views/Main.vue";
+
 
 export default {
- 
-}
+  components: {
+    //Main,
+    //Hearer
+  },
+};
 </script>
 
 <style scoped>
-
 #root {
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -41,7 +49,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: 
+  color: inherit;
 }
-
 </style>
