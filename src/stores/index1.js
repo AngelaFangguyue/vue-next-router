@@ -36,7 +36,7 @@ export const usesourceDataProvide = () => {
     resultData = [...resultInfo];
   };
   provide(sourceDataSymbol, {
-    sourceData,
+    searchData,
     resultData,
     setsearchData,
     setresultData,

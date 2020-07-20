@@ -1,6 +1,6 @@
 <template>
-  <div :style="{ background: customColor ? customColor : dafaultColor }">
-    aaaa{{customTitle}}
+  <div :style="{ background: color ? color : dafaultColor }" >
+    {{ title }}
   </div>
 </template>
 
@@ -8,8 +8,8 @@
 import { reactive, toRefs, computed } from "vue";
 export default {
   props: {
-    customColor: String,
-    customTitle: String
+    title: String,
+    color: String,
   },
 
   setup() {
@@ -23,11 +23,12 @@ export default {
 </script>
 
 <style scoped>
-header {
-  height: 50px;
+div {
+  height: 150px;
   width: 100%;
-  line-height: 50px;
+  line-height: 150px;
   text-align: center;
   color: white;
+  font-size:26px;
 }
 </style>

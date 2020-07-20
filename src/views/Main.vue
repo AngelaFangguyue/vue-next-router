@@ -11,7 +11,8 @@
   <Header1 />
   <Search1 />
   <Panel1 />-->
-  <Header :customTitle={title}  :customColor="{ color }"></Header>
+  <Header :title="title" :color="color"></Header>
+  <Search1 />
 </template>
 
 <script>
@@ -29,7 +30,7 @@ export default {
   },
   setup() {
     const state = reactive({
-      color: "red",
+      color: "#666",
       title: "CNODE",
     });
 

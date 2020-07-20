@@ -9,13 +9,11 @@
     <router-view />
   </div>-->
   <!--<Main />-->
-  <router-view/>
-  
+  <router-view />
 </template>
 
 <script>
 //import Main from "./views/Main.vue";
-
 
 export default {
   components: {
@@ -50,5 +48,17 @@ a {
 a:hover {
   text-decoration: underline;
   color: inherit;
+}
+</style>
+<style>
+*{
+  font-size:16px;
+}
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }
 </style>
